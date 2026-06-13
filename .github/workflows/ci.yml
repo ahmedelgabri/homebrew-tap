@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly to catch any issues with upstream changes
+    - cron: "0 0 * * 0"
+
+jobs:
+  test:
+    name: Test ${{ matrix.formula }} formula
+    runs-on: macos-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        formula:
+          - ccpeek
+          - git-wt
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Tap this repository
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/ahmedelgabri"
+          ln -s "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/ahmedelgabri/homebrew-tap"
+
+      - name: Install formula
+        run: brew install --verbose ahmedelgabri/tap/${{ matrix.formula }}
+
+      - name: Test formula
+        run: brew test ahmedelgabri/tap/${{ matrix.formula }}
+
+      - name: Audit formula
+        run: brew audit --strict ahmedelgabri/tap/${{ matrix.formula }}
