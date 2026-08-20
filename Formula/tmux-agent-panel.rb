@@ -5,25 +5,25 @@ class TmuxAgentPanel < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.11/tap-0.1.11-darwin-amd64.tar.gz"
-      sha256 "6f054402db9e99b15f5db4cd1d6a7993440fca527f526e1b5a327818016ac3e2"
+      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.12/tap-0.1.12-darwin-amd64.tar.gz"
+      sha256 "ebe47dc10eafad053c3d5275a159491921059cfd4decf37a25e2ce84043c5368"
     end
 
     on_arm do
-      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.11/tap-0.1.11-darwin-arm64.tar.gz"
-      sha256 "c4db79810c99dfccc05ec06009859a796af4ed83a42b423b6bdbd0f06ece88e0"
+      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.12/tap-0.1.12-darwin-arm64.tar.gz"
+      sha256 "f43c97dc3f638c89b84be89f08423a8a74468780574f05f4863987ab60bdd049"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.11/tap-0.1.11-linux-amd64.tar.gz"
-      sha256 "6a5ad047325531c48b50c3e8b9101ab0e65fb9501606ac21164536809ec3d71a"
+      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.12/tap-0.1.12-linux-amd64.tar.gz"
+      sha256 "c28eb303f3343d51ed588c78f3acad34281d4289b2639aa1036c24483b3edb9d"
     end
 
     on_arm do
-      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.11/tap-0.1.11-linux-arm64.tar.gz"
-      sha256 "2b865dfbd424e1fd6f013d1d79c3f0129e099a4b5cfde14069993cc9f71d2f43"
+      url "https://github.com/ahmedelgabri/tmux-agent-panel/releases/download/v0.1.12/tap-0.1.12-linux-arm64.tar.gz"
+      sha256 "1382482eba6f2ac5f039bedee7caf8c8d7efe2cb3d58b158d78eaffe5418fa5d"
     end
   end
 
