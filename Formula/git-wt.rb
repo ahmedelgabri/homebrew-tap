@@ -5,25 +5,25 @@ class GitWt < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.0.0/git-wt-3.0.0-darwin-amd64.tar.gz"
-      sha256 "dd54b44148399f4eca08f65c89d64483c7945691cbb999d9d1228ff3e9ef7ff6"
+      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.1.0/git-wt-3.1.0-darwin-amd64.tar.gz"
+      sha256 "6ac69441cc743eeca6711e8eda4646d5f07bb350310c6da24de835b939092697"
     end
 
     on_arm do
-      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.0.0/git-wt-3.0.0-darwin-arm64.tar.gz"
-      sha256 "59066815cca3ab5c146406435f53a800fb7389fcdba8e84ee5bf034651ed03ed"
+      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.1.0/git-wt-3.1.0-darwin-arm64.tar.gz"
+      sha256 "c9de1d1ec3545edc9860334f0574e38070ef0e0c98c3edd735e3c5fdc0a2f245"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.0.0/git-wt-3.0.0-linux-amd64.tar.gz"
-      sha256 "2cf1418f131b24c03ccad7084ee8b7b20639273c9f4e1e68c4ce756b5d453d2e"
+      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.1.0/git-wt-3.1.0-linux-amd64.tar.gz"
+      sha256 "71ab899c95d243254a4c762d2c778e8ef0daada2ef4531263e79b4ad00068188"
     end
 
     on_arm do
-      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.0.0/git-wt-3.0.0-linux-arm64.tar.gz"
-      sha256 "a3c620e0d72808787c23f85d917ec8f0128583610cc3acb1644c32e83e8707b8"
+      url "https://github.com/ahmedelgabri/git-wt/releases/download/v3.1.0/git-wt-3.1.0-linux-arm64.tar.gz"
+      sha256 "ccfc937f9d913ab72db49af1bc438cbf20ad9f0979ba787be5e762de91b74536"
     end
   end
 
