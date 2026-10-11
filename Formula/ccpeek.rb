@@ -5,23 +5,23 @@ class Ccpeek < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.1.1/ccpeek-2.1.1-darwin-arm64.tar.gz"
-      sha256 "030470886a5d6dab5fc85d88d317bced6710e339fb8063ad23d26084dc5633d0"
+      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.2.0/ccpeek-2.2.0-darwin-arm64.tar.gz"
+      sha256 "b4bafda9bb2c20e85745c472819f11b0aeca938fe702eac86630890993b5ad57"
     end
     on_intel do
-      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.1.1/ccpeek-2.1.1-darwin-amd64.tar.gz"
-      sha256 "da6a7c5d0061462a8d73ac0ecd9042c509ab6cbed711304d787a8566762a36e4"
+      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.2.0/ccpeek-2.2.0-darwin-amd64.tar.gz"
+      sha256 "185abd6363bb1b7bb028689021f1e20513bee10b0ec04cafb0985e6251540f1b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.1.1/ccpeek-2.1.1-linux-arm64.tar.gz"
-      sha256 "c211675121d8793b1762720e486776500e698ab667e803eac422cb42988215c2"
+      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.2.0/ccpeek-2.2.0-linux-arm64.tar.gz"
+      sha256 "9bd531b742825ae10a0a9af2f3f05a35124fc1a2dd16c101fdef4ba6212adf04"
     end
     on_intel do
-      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.1.1/ccpeek-2.1.1-linux-amd64.tar.gz"
-      sha256 "0392b3371e41bd62b7145917f82577a8642dd3aa058adbebc33c8051560cb4a6"
+      url "https://github.com/ahmedelgabri/ccpeek/releases/download/v2.2.0/ccpeek-2.2.0-linux-amd64.tar.gz"
+      sha256 "36fe8f94f9b837f26a540087f05a8f10653400b7029dd4e565ba259cecb867a0"
     end
   end
 
