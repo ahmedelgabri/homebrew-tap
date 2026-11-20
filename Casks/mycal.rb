@@ -1,8 +1,8 @@
 cask "mycal" do
-  version "0.2.0-220.gbd724c7"
-  sha256 "5f54702daf7d022dba4543898fed68e05dc75086dec21b98af8d3c8f703c1f29"
+  version "0.2.0-222.g8bd1a4c"
+  sha256 "e5933569dc01f4805b82f9869ce1742713e8ae4f0f534c87eafd89e3b5d742ea"
 
-  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/769327227",
+  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/771207889",
       header: [
         "Accept: application/octet-stream",
         "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
@@ -23,7 +23,8 @@ cask "mycal" do
   ]
 
   caveats <<~EOS
-    MyCal's repository is private. To install or upgrade it, set HOMEBREW_GITHUB_API_TOKEN
-    to a GitHub token that can read ahmedelgabri/MyCal.
+    MyCal's repository is private. To install or upgrade it, give Homebrew a GitHub token
+    that can read ahmedelgabri/MyCal:
+      HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" brew upgrade --cask ahmedelgabri/tap/mycal
   EOS
 end
