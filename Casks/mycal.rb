@@ -1,8 +1,8 @@
 cask "mycal" do
-  version "0.3.0-325.g965072d"
-  sha256 "26e121f2aeb5e73d368ae17805fec680c6bad08072d5e106826d9cb2f874bff5"
+  version "0.3.0-331.g6c59b40"
+  sha256 "d03efaa9b6445d3affb105ee014c8eceea4757b9713123d251cab0d2e07db289"
 
-  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/777123073",
+  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/777161514",
       header: [
         "Accept: application/octet-stream",
         "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
