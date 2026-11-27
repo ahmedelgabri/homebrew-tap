@@ -1,8 +1,8 @@
 cask "mycal" do
-  version "0.3.0-507.ga8d5096"
-  sha256 "49f6bbc274f0d99dce265018ad4906d55d88987c9e7e04d291eae681d90793f6"
+  version "0.3.0-528.gc1babee"
+  sha256 "db906311282ad41130f1aa14c5fc8a93a6e7bc97c2fe92b438637874c5459441"
 
-  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/797973042",
+  url "https://api.github.com/repos/ahmedelgabri/MyCal/releases/assets/801245129",
       header: [
         "Accept: application/octet-stream",
         "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
@@ -15,6 +15,7 @@ cask "mycal" do
   depends_on macos: :sonoma
 
   app "MyCal.app"
+  binary "#{appdir}/MyCal.app/Contents/Resources/bin/mycal"
 
   zap trash: [
     "~/Library/Application Support/MyCal",
